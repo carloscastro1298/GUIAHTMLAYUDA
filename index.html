@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Festival de sabores Bq</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>FESTIVAL DE SABORES BARRANQUILLA</h1>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Fechas</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Comida</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Descubre y disfruta de un sabor inugualable</h2>
+    <p>Sabor, musica y compartir entre amigos bajo las estrellas</p>
+    <a href="#" class="btn">Obtener entradas</a>
+  </div>
+</section>
+
+<section>
+  <h2>Upcoming Dates</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Ciudad</th>
+        <th>Hora</th>
+        <th>Lugar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mayo 12</td>
+        <td>Barranquilla</td>
+        <td>6:00 PM</td>
+        <td>Festival de comida rapida</td>
+      </tr>
+      <tr>
+        <td>Mayo 19</td>
+        <td>Cartagena</td>
+        <td>7:00 PM</td>
+        <td>Cocina en vivo</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="food">
+  <h2>Food Zones</h2>
+
+  <div class="food-container">
+    <div class="card">
+      <h3>Menu Barranquillero</h3>
+      <p>Salchipapas, perros calientes, hamburguesas</p>
+    </div>
+
+    <div class="card">
+      <h3>Menu Mexicano</h3>
+      <p>Tacos, nachos and spicy flavors</p>
+    </div>
+
+    <div class="card">
+      <h3>Comida de esquina</h3>
+      <p>Fritos</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+
+  <div class="gallery">
+    <img src="assets/images/food1.jpg" alt="food">
+    <img src="assets/images/food2.jpg" alt="food">
+    <img src="assets/images/food3.jpg" alt="food">
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>FESTIVAL DE SABORES BARRANQUILLA 2026</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
