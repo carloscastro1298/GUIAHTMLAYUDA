@@ -1,113 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Festival de sabores Bq</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Night Bites Festival</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header>
-  <h1>FESTIVAL DE SABORES BARRANQUILLA</h1>
-
-  <div class="menu-toggle" id="menu-toggle">
-    ☰
+<header class="header">
+  <div class="container nav">
+    <h1 class="logo">Night Bites</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#zones">Food</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
   </div>
-
-  <nav id="nav">
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Fechas</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Comida</a></li>
-    </ul>
-  </nav>
 </header>
 
 <main>
 
 <section class="hero">
   <div class="hero-content">
-    <h2>Descubre y disfruta de un sabor inugualable</h2>
-    <p>Sabor, musica y compartir entre amigos bajo las estrellas</p>
-    <a href="#" class="btn">Obtener entradas</a>
+    <h2>Night Flavors Experience</h2>
+    <p>Street food, music and culture under the stars</p>
+    <a href="#dates" class="btn">Discover More</a>
   </div>
 </section>
 
-<section>
+<section id="dates" class="section">
   <h2>Upcoming Dates</h2>
-
   <table>
     <thead>
       <tr>
-        <th>Fecha</th>
-        <th>Ciudad</th>
-        <th>Hora</th>
-        <th>Lugar</th>
+        <th>Date</th>
+        <th>City</th>
+        <th>Time</th>
+        <th>Event</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Mayo 12</td>
+        <td>May 12</td>
         <td>Barranquilla</td>
         <td>6:00 PM</td>
-        <td>Festival de comida rapida</td>
+        <td>Street Food Show</td>
       </tr>
       <tr>
-        <td>Mayo 19</td>
+        <td>May 19</td>
         <td>Cartagena</td>
         <td>7:00 PM</td>
-        <td>Cocina en vivo</td>
+        <td>Live Cooking</td>
+      </tr>
+      <tr>
+        <td>May 26</td>
+        <td>Santa Marta</td>
+        <td>5:30 PM</td>
+        <td>Dessert Contest</td>
       </tr>
     </tbody>
   </table>
 </section>
 
-<section class="food">
+<section id="about" class="section">
+  <h2>About</h2>
+  <p>We bring together the best flavors, live shows and a vibrant night atmosphere.</p>
+  <ul class="features">
+    <li>Top chefs</li>
+    <li>Live music</li>
+    <li>Food experiences</li>
+    <li>Night vibes</li>
+  </ul>
+</section>
+
+<section id="zones" class="section">
   <h2>Food Zones</h2>
-
-  <div class="food-container">
+  <div class="grid">
     <div class="card">
-      <h3>Menu Barranquillero</h3>
-      <p>Salchipapas, perros calientes, hamburguesas</p>
+      <h3>Street Food</h3>
+      <p>Burgers, tacos and more</p>
     </div>
-
     <div class="card">
-      <h3>Menu Mexicano</h3>
-      <p>Tacos, nachos and spicy flavors</p>
+      <h3>Desserts</h3>
+      <p>Sweet creations</p>
     </div>
-
     <div class="card">
-      <h3>Comida de esquina</h3>
-      <p>Fritos</p>
+      <h3>Drinks</h3>
+      <p>Cocktails and craft beer</p>
     </div>
   </div>
 </section>
 
-<section>
+<section id="gallery" class="section gallery">
   <h2>Gallery</h2>
-
-  <div class="gallery">
-    <img src="assets/images/food1.jpg" alt="food">
-    <img src="assets/images/food2.jpg" alt="food">
-    <img src="assets/images/food3.jpg" alt="food">
+  <div class="grid-gallery">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
 </section>
 
 </main>
 
-<footer>
-  <p>FESTIVAL DE SABORES BARRANQUILLA 2026</p>
+<footer class="footer">
+  <p>2026 Night Bites Festival</p>
 </footer>
-
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("nav");
-
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-</script>
 
 </body>
 </html>
